@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 
-
+kkkkkkkkkkkkkkkkkkkk
 using namespace std;
 
 	int ConversãoBinDec(char bin[]){
