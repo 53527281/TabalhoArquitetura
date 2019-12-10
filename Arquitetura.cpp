@@ -2,9 +2,10 @@
 #include <stdio.h>
 #include <string.h>
 
+
 using namespace std;
 
-	int ConversãoBinDec(char bin[]){
+/*	int ConversãoBinDec(char bin[]){
 		
 		for(i = 0; bin > 0; i++)
 		{	dec = dec + pow(2, i) * (bin % 10);
@@ -12,29 +13,29 @@ using namespace std;
 		}
 		return dec;
 	};
-
+*/
 int main()
 {
-	int Mem[tamanho][5];
+	int Mem[tamanho][5];				
 	
 	//int i=0;
-	int RB[3];
-	int RC[3];
-	int RA[3];
-	int dec;
-	char ins[16];
-	string inst;
+	int RB[3];							//registrador B
+	int RC[3];							//registrador C
+	int RA[3];							//registrador A
+	//int dec;							//
+	char ins[16];						//vetor da instrução obtido pela matriz mem
+	//string inst;						//
 	bool T11= false;					//Variavel tipo 11 (Load) = falso
 	bool T12= false;					//Variavel tipo 12 (Store) = falso
-	bool T2= false;					//Variavel tipo 2 (R) = falso
-	bool T3= false;					//Variavel para desvio = falso
-	bool T4= false;					//Variavel para desvio = falso
-	bool T5= false;					//Variavel para desvio = falso
-	bool T6= false;					//Variavel para desvio = falso
-	bool T7= false;					//Variavel para desvio = falso
+	bool T2= false;						//Variavel tipo 2 (R) = falso
+	bool T3= false;						//Variavel para desvio = falso
+	bool T4= false;						//Variavel para desvio = falso
+	bool T5= false;						//Variavel para desvio = falso
+	bool T6= false;						//Variavel para desvio = falso
+	bool T7= false;						//Variavel para desvio = falso
 
 
-
+/*
 	FILE *arq;
 
     char c, letra = '\n';
@@ -61,12 +62,12 @@ int main()
 		}
 	}
 
-
+*/
 
 	//ID
-	for (int i=0; i<16; i++){
-		ins[i]= inst;
-	}
+	//for (int i=0; i<16; i++){
+	//	ins[i]= inst;
+	//}
 	
 	
 	if((ins[0]==0) && (ins[1]==1){ // ou do tipo 1 ou do tipo 7
@@ -112,11 +113,11 @@ int main()
 				
 	}			
 			
-			if((ins[0]==1) && (ins[1]==0){
-				T3=true;			
+			if((ins[0]==1) && (ins[1]==0){ //compara o primeiro e o segundo bit
+				T3=true;				   //a variável é T3
 			}
-			if((ins[0]==1) && (ins[1]==1){
-				T4=true;			
+			if((ins[0]==1) && (ins[1]==1){ //compara o primeiro e o segundo bit 
+				T4=true;				   //a variavel é T4
 			}
 			if((ins[0]==0) && (ins[1]==0){ //ou é do tipo 4, ou do tipo 5, ou 6
 				if((ins[2]==0) && (ins[3]==0)){ //comparando o OP para saber se é do tipo &
