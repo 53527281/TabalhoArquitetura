@@ -110,6 +110,9 @@ int main()
 				T2=true; //A instrução é do tipo 2 (R)
 				// Fazer as verificações da ALU 
 			}
+		if((ins[5]==0) && (ins[6]==0) && (ins[7]==1) && (ins[8]==1) && (ins[9]==0)){
+			//Tipo I, and
+		}
 				
 	}			
 			
